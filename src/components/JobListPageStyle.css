@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=League+Spartan:500,700&display=swap');
+
+body {
+    font-family: 'League Spartan', sans-serif !important;
+}
+
+.cs-z-index {
+    z-index: 5 !important;
+}
+
+.cs-w {
+    width: 1200px !important;
+}
+
+.cs-transition {
+    transition: .5s !important;
+}
+
+/*Background*/
+.cs-bg-image {
+    background-color: hsl(180, 31%, 95%) !important;
+    position: relative;
+}
+
+.cs-bg-image::before {
+    content: '';
+    position: absolute;
+    z-index: 0 !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 22vh !important;
+    background: url('../images/bg-header-desktop.svg') hsl(180, 29%, 50%) no-repeat top center / 100%;
+}
+
+/*Border*/
+.cs-bc-start {
+    border-left: solid 5px transparent !important;
+}
+
+.cs-bc-start-featured {
+    border-left: solid 5px hsl(180, 29%, 50%) !important;
+}
+
+/*Font*/
+.cs-fw-700 {
+    font-weight: 700 !important;
+}
+
+.cs-tc-dark-cyan {
+    color: hsl(180, 29%, 50%) !important;
+}
+
+.cs-tc-dark-grayish-cyan {
+    color: hsl(180, 8%, 52%) !important;
+}
+
+/*Badge*/
+.badge.cs-badge-new {
+    background-color: hsl(180, 29%, 50%) !important;
+}
+
+/*Button*/
+.cs-btn {
+    background-color: hsl(180, 31%, 95%) !important;
+    color: hsl(180, 29%, 50%) !important
+}
+
+.cs-btn:hover {
+    background-color: hsl(180, 29%, 50%) !important;
+    color: hsl(180, 31%, 95%) !important 
+}
+
+.cs-btn-2 {
+    background-color: hsl(180, 31%, 95%) !important;
+    color: hsl(180, 29%, 50%) !important
+}
+
+.cs-btn-2 .badge {
+    background-color: hsl(180, 29%, 50%) !important;
+    border-radius: 0 5px 5px 0 !important;
+}
+
+.cs-btn-2:hover .badge {
+    background-color: black !important;
+} 
+
+.cs-btn-clear {
+    position: relative;
+}
+
+.cs-btn-clear::after {
+    transition: .5s !important;    
+    position: absolute;
+    content: '';
+    right: 0;
+    left: 0;
+    top: 65%;
+    height: 1px;
+    background-color: transparent !important;
+}
+
+.cs-btn-clear:hover::after {
+    background-color: hsl(180, 29%, 50%) !important;
+}
