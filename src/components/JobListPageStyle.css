@@ -30,7 +30,7 @@ body {
     right: 0;
     top: 0;
     height: 22vh !important;
-    background: url('../images/bg-header-desktop.svg') hsl(180, 29%, 50%) no-repeat top center / 100%;
+    background: url('../images/bg-header-desktop.svg') hsl(180, 29%, 50%) no-repeat top center / 100% 100%;
 }
 
 /*Border*/
@@ -111,7 +111,7 @@ body {
     }
 
     .cs-bg-image::before {
-        background: url('../images/bg-header-mobile.svg') hsl(180, 29%, 50%) no-repeat top center / 100%;
+        background: url('../images/bg-header-mobile.svg') hsl(180, 29%, 50%) no-repeat top center / 100% 100%;
     }
 
     .cs-img-logo {
