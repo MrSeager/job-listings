@@ -87,6 +87,7 @@ body {
 
 .cs-btn-clear {
     position: relative;
+    color: hsl(180, 29%, 50%) !important;
 }
 
 .cs-btn-clear::after {
@@ -102,4 +103,34 @@ body {
 
 .cs-btn-clear:hover::after {
     background-color: hsl(180, 29%, 50%) !important;
+}
+
+@media screen and (max-width: 991px) {
+    .cs-w {
+        width: 100% !important;
+    }
+
+    .cs-bg-image::before {
+        background: url('../images/bg-header-mobile.svg') hsl(180, 29%, 50%) no-repeat top center / 100%;
+    }
+
+    .cs-img-logo {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: -100%;
+        left: 40px;
+        height: 400% !important;
+    }
+
+    .cs-border-bottom {
+        border-bottom: solid 2px hsl(180, 8%, 52%);
+    }
+
+    .cs-btn-clear {
+        color: hsl(180, 8%, 52%) !important;
+    }
+
+    .cs-btn-clear:hover::after {
+        background-color: hsl(180, 8%, 52%) !important;
+    }
 }

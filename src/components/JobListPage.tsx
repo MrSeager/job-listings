@@ -13,13 +13,11 @@ const JobListPage: FC = () => {
     const [filters, setFilters] = useState<string[]>([])
 
     return (
-        <Container fluid className='cs-bg-image min-vh-100 d-flex flex-column align-items-center justify-content-top pt-5'>
-           {filters.length !== 0 ? (
-                <FiltersPanel 
-                        filters={filters}
-                        setFilters={setFilters}
-                />
-            ) : ''}
+        <Container fluid className='cs-bg-image min-vh-100 d-flex flex-column align-items-center justify-content-top pt-5'>     
+            <FiltersPanel 
+                    filters={filters}
+                    setFilters={setFilters}
+            />
             <JobsPanel 
                 filters={filters}
                 setFilters={setFilters}

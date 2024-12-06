@@ -19,13 +19,13 @@ const FiltersPanel: FC<FiltersPanelProps> = ({ filters, setFilters }) => {
     }
 
     return(
-        <Container className='cs-w mt-5 cs-z-index shadow py-3 px-4 rounded rounded-3 bg-white d-flex flex-row align-items-center justify-content-between gap-3'>
-            <Container className='d-flex flex-row align-items-start gap-3'>
+        <Container className={`cs-transition cs-w mt-5 mb-lg-0 mb-5 cs-z-index shadow py-3 px-4 rounded rounded-3 ${filters.length > 0 ? 'opacity-100' : 'opacity-0'} bg-white d-flex flex-row align-items-center justify-content-between gap-3`}>
+            <Container className='d-flex flex-row align-items-start gap-3 flex-wrap'>
                 {filters.map((filter) => (
                     <Button key={filter} onClick={() => handleRemoveFilter(filter)} className='cs-btn-2 py-0 pe-0 border-0 cs-fw-700 cs-transition'>{filter} <Badge className='ms-1 p-2 cs-transition'><Image src={ImgRemove} alt='remove' /></Badge></Button>
                 ))}
             </Container>
-            <Button onClick={handleClearFilters} className='cs-btn-clear px-0 border-0 bg-transparent cs-tc-dark-cyan'>Clear</Button>
+            <Button onClick={handleClearFilters} className='cs-btn-clear px-0 border-0 bg-transparent cs-fw-700'>Clear</Button>
         </Container>
     );
 }
